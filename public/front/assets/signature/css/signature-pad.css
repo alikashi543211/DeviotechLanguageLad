@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.signature{
+  margin-bottom: 44px !important;
+}
+.file{
+  margin-bottom: 24px !important;
+}
+.signature-pad {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  max-height: 460px;
+  min-height: 260px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.signature-pad::before,
+.signature-pad::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 40%;
+  height: 10px;
+  bottom: 10px;
+  background: transparent;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.signature-pad::before {
+  left: 20px;
+  -webkit-transform: skew(-3deg) rotate(-3deg);
+          transform: skew(-3deg) rotate(-3deg);
+}
+
+.signature-pad::after {
+  right: 20px;
+  -webkit-transform: skew(3deg) rotate(3deg);
+          transform: skew(3deg) rotate(3deg);
+}
+.signature-button{
+  cursor: pointer;
+  width: 110px;
+  height: 34px;
+  color: white;
+  /* background-image: -webkit-gradient(linear, left top, left bottom, from(#28A745E0), to(#23D04B));
+  background-image: -webkit-linear-gradient(top, #28A745E0 0%, #23D04B 100%);
+  background-image: -o-linear-gradient(top, #28A745E0 0%, #23D04B 100%);
+  background-image: linear-gradient(180deg, #28A745E0 0%, #23D04B 100%); */
+  background-color: #5AB48B;
+  border: 1px solid rgba(9, 155, 166, 0.5);
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin: 2px;
+}
+.signature-pad--body {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #f4f4f4;
+}
+
+.signature-pad--body
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+.signature-pad--footer {
+  color: #C3C3C3;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 8px;
+}
+.signature-pad--actions {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 6px;
+}

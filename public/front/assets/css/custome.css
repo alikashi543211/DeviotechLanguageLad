@@ -1,0 +1,519 @@
+.color-checked{
+    background-color: #5AB48B!important;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+.dashboard-section .profilework-carousel img
+{
+	height: 25vh;
+	width:100%;
+	object-fit: cover;
+}
+
+.toast-info {
+	background-color: green;
+}
+#toast-container > .toast-success {
+ 	opacity: 1 !important;
+}
+#toast-container > .toast-error {
+    opacity: 1 !important;
+}
+
+.bg_green
+{
+    background: #28a745 !important;
+}
+
+.slot_column
+{
+    width: 50%;
+    text-align: center;
+}
+.front-profile-section .schedule_table,
+.seller-dashboard--page .schedule_table
+{
+    width:100%;
+}
+
+.fc-daygrid-day a {
+    color: #000 !important;
+}
+
+
+.button-sm {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 6px 22px;
+    border-radius: 50px;
+    background-color: #5AB48B;
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.button-sm:hover{
+    background-color: #0d6691;
+    color: #ffffff;
+}
+
+.conversation {
+    width: 100%;
+    height: 500px;
+}
+.sidepanel{
+    float: left;
+    width: 26%;
+    height: 100%;
+    /* background-color: #113565; */
+}
+#toggle-chat-sidebar{
+    display: none;
+    padding-left: 22px;
+    margin: 0px;
+    height: 60px;
+    border-radius: 0px;
+    width: 58px;
+    background-color: #f26d64;
+    color: #fff;
+}
+.sidepanel .search input{
+    padding: 22px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #eee;
+}
+.sidepanel .contacts{
+    height: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+.sidepanel .contacts.expanded {
+    height: calc(100% - 334px);
+}
+.sidepanel .contacts .contact {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+.sidepanel .contacts .contact.active {
+    background-color: #ececec;
+}
+.sidepanel .contacts .contact .media-left {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+}
+
+.sidepanel .contacts .contact .media-left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.sidepanel .contacts .contact .media-body {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.sidepanel .contacts .contact .media-body p {
+    margin-bottom: 0px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.chat-sidebar-toggled{
+    position: absolute !important;
+    width: 300px !important;
+    box-shadow: 0px 0px 10px #ccc;
+    z-index: 100000;
+}
+
+.msger {
+    float: right;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 70%;
+    /* margin: 25px 10px; */
+    height: 100%;
+    border-radius: 5px;
+    background: var(--msger-bg);
+    z-index: 0;
+}
+
+.msger-header {
+  padding: 10px;
+  background:#5AB48B;
+  color: #fff;
+}
+
+.msger-header h5 {
+    color: #fff !important;
+}
+
+.msger-chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+.msger-chat::-webkit-scrollbar {
+  width: 6px;
+}
+.msger-chat::-webkit-scrollbar-track {
+  background: #ddd;
+}
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.msg:last-of-type {
+  margin: 0;
+}
+.msg-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background: #ddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+.msg-bubble,
+.custom-offer-bubble {
+  max-width: 450px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  background: #ececec;
+}
+
+.msg-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.msg-info-name {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.msg-info-time {
+  font-size: 0.5em;
+}
+.msg-text{
+    font-size: 13px;
+    text-align: left;
+}
+.custom-offer-text {
+    font-size: 16px;
+    text-align: left;
+}
+.left-msg .msg-bubble,
+.left-msg .custom-offer-bubble {
+  border-bottom-left-radius: 0;
+}
+
+.right-msg {
+  flex-direction: row-reverse;
+}
+.right-msg .msg-bubble {
+  background: #0d6691;
+  color: #fff;
+  border-bottom-right-radius: 0;
+}
+.right-msg .custom-offer-bubble {
+    border-bottom-right-radius: 0;
+}
+
+.right-msg .msg-img {
+  margin: 0 0 0 10px;
+}
+
+.msger-inputarea {
+  display: flex;
+  padding: 10px 0px;
+  border-top: var(--border);
+}
+.msger-inputarea * {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.msger-input {
+  flex: 1;
+  background: #ddd;
+}
+.msger-send-btn {
+  margin-left: 10px;
+  background:#5AB48B;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.23s;
+}
+.msger-send-btn:hover {
+    color: #fff;
+  background:#0d6691;
+}
+
+.offer-btn {
+    margin-left: 10px;
+    background-color: transparent;
+    color: #5AB48B;
+    border: 2px solid #5AB48B;
+    transition: all ease 0.23s;
+}
+.offer-btn:hover {
+    background-color: #5AB48B;
+    color: #fff;
+    transition: all ease 0.23s;
+}
+.msger-inputarea button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.modal .amount-input {
+    position: relative;
+}
+.modal .amount-input::before {
+    content: "$";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #000;
+}
+
+.select-booking label {
+    cursor: pointer;
+}
+
+.select-booking label.active {
+    background-color: #5AB48B;
+    color: #fff !important;
+}
+
+.select-booking label.active h5,
+.select-booking label.active p {
+    color: #fff !important;
+}
+
+#chat_error{
+    position: absolute;
+    bottom: 80%;
+    border-radius: 0px;
+    text-align: left;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.msger-inputarea{
+  position: relative;
+}
+
+/* Start Google Auto Complete Design*/
+.pac-item{
+  cursor: pointer;
+}
+
+.pac-icon
+{
+    margin-right:6px !important;
+}
+.pac-logo:after
+{
+    content: "";
+    padding: 1px 1px 1px 0;
+    height: 18px;
+    box-sizing: border-box;
+    text-align: right;
+    display: block;
+    background-image: none !important;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 120px 14px;
+}
+/* End Google Auto Complete Design*/
+
+.banner-section #google_location{
+  /*width: 22.9% !important;*/
+}
+
+.temphub-nav-tabs .nav-tabs li{
+  background: #5AB48B;
+  padding: 2px 5px;
+  margin: 2px 5px;
+  transition: all 300ms ease;
+  border-radius: 3px;
+  margin-left: 0px;
+}
+
+.temphub-nav-tabs .nav-tabs li a{
+  color: #ffffff;
+}
+
+.temphub-nav-tabs .nav-tabs li.active,
+.temphub-nav-tabs .nav-tabs li:hover{
+  background: #0d6691;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 735px) {
+    .conversation .sidepanel {
+        width: 58px;
+        min-width: 58px;
+    }
+    .sidepanel .search {
+        display: none;
+    }
+    .sidepanel .contacts{
+        height: 88%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .sidepanel .contacts::-webkit-scrollbar{
+        display: none;
+    }
+    .sidepanel .contacts ul li.contact {
+        padding: 6px 0 46px 8px;
+        display: block;
+    }
+    .sidepanel .contacts ul li.contact .wrap {
+        width: 100%;
+    }
+    .sidepanel .contacts ul li.contact .wrap .meta {
+        display: none;
+    }
+
+    .msger{
+        width: calc(100% - 58px);
+    }
+    #toggle-chat-sidebar{
+        display: block;
+    }
+    .sidepanel.chat-sidebar-toggle .contacts ul li.contact .wrap .meta{
+        display: block !important;
+    }
+}
+.dropify-clear
+{
+    cursor: pointer;
+}
+.styled-form .password-eye{
+    cursor: pointer !important;
+}
+.styled-form .password-eye:hover{
+    color: #075e89;
+}
+.options-view .type-form .ui-selectmenu-button.ui-button:hover,
+.options-view .type-form .form-group input:hover,
+.options-view .type-form .form-group select:hover,
+.options-view .type-form .form-group textarea:hover{
+    background-color: #09608c;
+}
+
+.profile-form input.masked
+{
+    font-size: 16px;
+    font-family: monospace;
+    padding-right: 10px;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+#expiry_dateMask
+{
+    display: none;
+}
+.my-schedule-section .caption
+{
+    display: block;
+    margin-top: -38px;
+    margin-left: 70px;
+}
+
+.fc-scrollgrid-section  .fc-daygrid-day
+{
+    cursor: pointer;
+}
+
+#calendar-monthly .fc-button-active:hover
+{
+    background: #075e89;
+    border-color: #075e89;
+}
+
+#calendar-monthly .fc-button-active
+{
+    background: #5ab48b;
+    border-color: #5ab48b;
+}
+
+
+.logo-image
+{
+    width: 75px;
+}
+
+.main-menu .navigation > li > a{
+    color:#07548a;
+}
+
+.main-menu .navigation > li:hover > a, .main-menu .navigation > li.current > a {
+    color: #5AB48B !important;
+}
+
+.main-menu .navigation > li > a{
+    padding: 25px 0px;
+}
